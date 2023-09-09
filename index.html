@@ -3,14 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="src/css/global.css" rel="stylesheet"/>
+    <title>Vite App</title>
 </head>
 <body>
-    <h1>Hey</h1>
-    <p>good</p>
-    <p>not good</p>
-    <p>fitur1</p>
-    <footer>made by adam</footer>
-    
+    <div class="flex flex-col justify-between h-screen">
+        <header class = "flex justify-between p-8">
+            <div class="text-2xl font-bold tracking-tight bg-gradient-to-t from-rose-200 to-blue-800 bg-clip-text text-transparent">ahmadadam12.</div>
+            <div class = "flex gap-8">
+                <div>About</div>
+                <div>Craft</div>
+                <div>Media</div>
+            </div>
+            <div>Contact</div>
+        </header>
+        <main class="max-w-3xl m-auto grid grid-cols-3 gap-8">
+            <!-- main card -->
+            <div class="card col-span-2 relative">
+                <div class="absolute top-4 right-4 flex gap-2 items-center bg-emerald-100 border-[1px] w-fit rounded-full px-3 py-1 text-xs">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    <div>Open for Collaboration</div></div>
+                <img src="public/pixelCat.jpg" class="w-16 h-16 rounded-full"/>
+                <div>Ahmad Adam</div>
+                <div class="text-xs">High Tech Cat</div>
+                <div class="flex gap-1 items-baseline">
+                    <h1 id="heading"></h1>
+                </div>
+                
+            </div>
+            <!-- facebook card -->
+            <div class="card flex justify-center items-center">
+                <img src="public/facebook.svg" class="w-[80px] h-[80px]"/>
+            </div>
+            <!-- portofolio -->
+            <div class="card flex justify-center items-center relative">
+                <div class="bg-white p-3 rounded-full absolute bottom-3 left-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                    </svg>
+                </div>
+                <div class="text-xs font-medium">
+                    Designstripe mockups
+                </div>   
+            </div>
+            <!-- form -->
+            <div class="card col-span-2">
+                <h3>Collaboration?</h3>
+                <p>I am super cat</p>
+                <input id="form"/>
+            </div>
+        </main>
+        <footer class="text-center p-8">
+            <p>Build with love</p>
+
+        </footer>
+    </div>
+    <script src = "src/js/main.js" type="module"></script>
 </body>
 </html>
