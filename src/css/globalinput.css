@@ -4,16 +4,19 @@
 
 @layer base{
     body{
-        @apply bg-yellow-100
+        @apply bg-white
     }
     h1{
-        @apply text-4xl font-bold tracking-tighter;
+        @apply text-6xl font-bold tracking-tighter;
     }
     h2{
         @apply text-3xl font-bold tracking-tighter;
     }
     h3{
-        @apply text-2xl font-bold tracking-tighter;
+        @apply text-2xl font-bold tracking-wider;
+    }
+    h4{
+        @apply text-1xl font-bold tracking-wider;
     }
     input{
         @apply w-full bg-transparent py-2 border-b-[1px] focus:outline-none;
@@ -22,6 +25,6 @@
 
 @layer components{
     .card{
-        @apply bg-blue-300 hover:scale-105 transition duration-300 ease-in-out p-8 rounded-3xl shadow-sm;
+        @apply bg-zinc-200 hover:scale-105 transition duration-300 ease-in-out p-8 rounded-3xl shadow-sm;
     }
 }
