@@ -19,7 +19,7 @@
         @apply text-1xl font-bold tracking-wider;
     }
     input{
-        @apply w-full bg-transparent py-2 border-b-[1px] focus:outline-none;
+        @apply w-full bg-transparent py-2 border-b-[3px] focus:outline-none;
     }
 }
 
